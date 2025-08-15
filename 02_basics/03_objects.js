@@ -17,6 +17,8 @@ const JsUser = {
     lastLoginDays: ["Monday", "Saturday"]
 }
 
+// using mysym without bracket notation will not cause error but type will be string.
+
 // console.log(JsUser.email)
 // console.log(JsUser["email"])
 // console.log(JsUser["full name"])
@@ -24,6 +26,10 @@ const JsUser = {
 
 JsUser.email = "hitesh@chatgpt.com"
 // Object.freeze(JsUser)
+
+// after freeze, you cannot change the object
+
+
 JsUser.email = "hitesh@microsoft.com"
 // console.log(JsUser);
 
